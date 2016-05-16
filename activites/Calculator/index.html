@@ -1,0 +1,73 @@
+<html>
+  <body>
+  
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function add(n1, n2){
+              sum=toNum(n1) + toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+	  
+	  
+	  <script>
+	  
+          function toNum(n){
+              return parseInt(n);
+          }
+          function Minus(n1, n2){
+              sum=toNum(n1) - toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+	  
+	  
+	  <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function Multiply(n1, n2){
+              sum=toNum(n1) * toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+	  
+	  
+	  <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function Divide(n1, n2){
+              sum=toNum(n1) / toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+	  	  <link href="../css/toggle-sidebar.css" rel="stylesheet">
+	  
+      <form name="calc">
+          Num1: <input type="text" id="num1"><br>
+          Num2: <input type="text" id="num2"><br>
+    </form>
+    <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+	<button onclick="Minus(document.querySelector('#num1').value, document.querySelector('#num2').value)">Minus</button>
+	<button onclick="Divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+	<button onclick="Multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

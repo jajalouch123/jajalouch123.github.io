@@ -1,7 +1,11 @@
 <html>
+<head> 
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+ <!-- Custom CSS -->
+<link href="../css/toggle-sidebar.css" rel="stylesheet">
   <body>
-  
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
       <script>
           function toNum(n){
               return parseInt(n);
@@ -63,11 +67,16 @@
           Num1: <input type="text" id="num1"><br>
           Num2: <input type="text" id="num2"><br>
     </form>
+	<div class="">
     <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
-	<button onclick="Minus(document.querySelector('#num1').value, document.querySelector('#num2').value)">Minus</button>
-	<button onclick="Divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+	<button onclick="Minus(document.querySelector('#num1').value, document.querySelector('#num2').value)">Minus</button> 
+	<br>
+	<button onclick="Divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button> 
 	<button onclick="Multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+	</div>
+<!-- jQuery -->
 <script src="../js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

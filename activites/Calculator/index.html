@@ -1,11 +1,18 @@
 <html>
 <head> 
+
 <!-- Bootstrap Core CSS -->
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
  <!-- Custom CSS -->
 <link href="../../css/toggle-sidebar.css" rel="stylesheet">
+</head>
   <body>
-
+      <style>
+        *{
+          width: 100%;
+		  
+        }
+      </style>
       <script>
           function toNum(n){
               return parseInt(n);
@@ -34,21 +41,31 @@
           }
       </script>
 	  
-	  
-	  <script>
-          function toNum(n){
-              return parseInt(n);
-          }
-          function Multiply(n1, n2){
-              sum=toNum(n1) * toNum(n2);
-            output(sum);
-          }
-          function output(res){
-              alert(res);
-          }
-      </script>
-	  
-	  
+	   <div class="container">
+        <div class="col-md-12">
+          <form name="calc">
+            <div class="row">
+              <div class="col-md-3">
+                 Num1:
+              </div>
+               
+				<div class="col-md-9">
+                <input type="text" id="num1">
+              </div>
+            </div>
+			 Num2
+            <div class="row">
+             
+			   <div class="col-md-3">
+               
+              </div>
+              <div class="col-md-9">
+                <input type="text" id="num2">
+              </div>
+            </div>
+          </form>
+		  
+	 
 	  <script>
           function toNum(n){
               return parseInt(n);
@@ -61,19 +78,45 @@
               alert(res);
           }
       </script>
+	  
+	   <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function Multiply(n1, n2){
+              sum=toNum(n1) * toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
 	  	  <link href="../css/toggle-sidebar.css" rel="stylesheet">
 	  
-      <form name="calc">
-          Num1: <input type="text" id="num1"><br>
-          Num2: <input type="text" id="num2"><br>
+	  
+  
+		 
     </form>
-	<div class="">
-    <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
-	<button onclick="Minus(document.querySelector('#num1').value, document.querySelector('#num2').value)">Minus</button> 
-	<br>
+	 <div class="row">
+              <div class="col-md-6">
+    <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add </button> 
+	 </div>
+              <div class="col-md-6">
+	<button onclick="Minus(document.querySelector('#num1').value, document.querySelector('#num2').value)">Minus</button>
+      </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-md-6">
 	<button onclick="Divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button> 
+	   </div>
+	   <div class="col-md-6">
 	<button onclick="Multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
-	</div>
+          </div>
+        </div>
+      </div>
+
+	
 <!-- jQuery -->
 <script src="../../js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
